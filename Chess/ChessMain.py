@@ -36,11 +36,28 @@ def main():
     print(gs.board)
     load_images() # Load the images that were defined earlier
     running = True
+    sqSelected = () # Keep track of the last selected piece
+    playerClicks = [] # Keep track of all player clicks
     # Check events for a 'quit' user input -- If so, then quit
     while running:
         for e in p.event.get():
             if e.type == p.QUIT:
                 running = False
+            elif e.type == p.MOUSEBUTTONDOWN:
+                location = p.mouse.get_pos() # (x,y) location of mouse
+                col = location[0]//SQ_SIZE
+                row = location[1]//SQ_SIZE
+                if sqSelected == (row, col): # User clicked same sq twice (undo)
+                        sqSelected = ()
+                        playerClicks = []
+                else:
+                    sqSelected = (row, col)
+                    playerClicks.append(sqSelected) # Append both first and second click
+                if len(playerClicks) == 2: # After second click - make move
+                    move = ChessEngine.Move(playerClicks[0], playerClicks[1], gs.board)
+                    gs.makeMove(move)
+                    sqSelected = () # Reset user clicks
+                    playerClicks = []
 
         clock.tick(MAX_FPS)
         p.display.flip()
