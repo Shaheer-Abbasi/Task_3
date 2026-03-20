@@ -35,22 +35,57 @@ def main():
     gs = ChessEngine.GameState()
     print(gs.board)
     load_images() # Load the images that were defined earlier
+    validMoves = gs.getValidMoves()
+    moveMade = False # Flag variable for when a move is made
+
     running = True
+    sqSelected = () # Keep track of the last selected piece
+    playerClicks = [] # Keep track of all player clicks
     # Check events for a 'quit' user input -- If so, then quit
     while running:
         for e in p.event.get():
             if e.type == p.QUIT:
                 running = False
+            # Mouse handler
+            elif e.type == p.MOUSEBUTTONDOWN:
+                location = p.mouse.get_pos() # (x,y) location of mouse
+                col = location[0]//SQ_SIZE
+                row = location[1]//SQ_SIZE
+                if sqSelected == (row, col): # User clicked same sq twice (undo)
+                        sqSelected = ()
+                        playerClicks = []
+                else:
+                    sqSelected = (row, col)
+                    playerClicks.append(sqSelected) # Append both first and second click
+                if len(playerClicks) == 2: # After second click - make move
+                    move = ChessEngine.Move(playerClicks[0], playerClicks[1], gs.board)
+                    if move in validMoves:
+                        gs.makeMove(move)
+                        moveMade = True
+                        sqSelected = () # Reset user clicks
+                        playerClicks = []
+                    else:
+                        playerClicks = [sqSelected]
+            # Key handler
+            elif e.type == p.KEYDOWN:
+                if e.key == p.K_z: # Undo move when 'z' is pressed
+                    gs.undoMove()
+                    moveMade = True
+
+        if moveMade:
+            validMoves = gs.getValidMoves()
+            moveMade = False
 
         clock.tick(MAX_FPS)
         p.display.flip()
-        drawGameState(screen, gs)
+        drawGameState(screen, gs, validMoves, sqSelected)
 
 """
 Function for graphics
 """
-def drawGameState(screen, gs):
+def drawGameState(screen, gs, validMoves, sqSelected):
     drawBoard(screen)
+    highlightSquares(screen, gs, validMoves, sqSelected)
     drawPieces(screen, gs.board)
 
 """
@@ -72,6 +107,42 @@ def drawPieces(screen, board):
             piece = board[r][c]
             if piece != "--": # If square is not empty
                 screen.blit(IMAGES[piece], (c*SQ_SIZE, r*SQ_SIZE, SQ_SIZE, SQ_SIZE)) # Put piece on square
+
+
+"""
+Highlight valid moves + capturable enemy pieces
+"""
+def highlightSquares(screen, gs, validMoves, sqSelected):
+    if sqSelected != ():
+        r, c = sqSelected
+        # Selected piece belongs to the player
+        if gs.board[r][c][0] == ('w' if gs.whiteToMove else 'b'):
+            s = p.Surface((SQ_SIZE, SQ_SIZE))
+            s.set_alpha(100)
+            s.fill(p.Color("blue"))
+            screen.blit(s, (c * SQ_SIZE, r * SQ_SIZE))
+
+            # Highlight the selected square
+            for move in validMoves:
+                if move.startRow == r and move.startCol == c:
+                    targetRow, targetCol = move.endRow, move.endCol
+                    isCapture = gs.board[targetRow][targetCol] != "--"
+
+                    if isCapture:
+                        # Draw ring around the capturable piece
+                        s = p.Surface((SQ_SIZE, SQ_SIZE), p.SRCALPHA)
+                        p.draw.circle(s, (150, 0, 0, 120),
+                                      (SQ_SIZE//2, SQ_SIZE//2),
+                                      SQ_SIZE//2, 6)
+                        screen.blit(s, (targetCol*SQ_SIZE, targetRow*SQ_SIZE))
+                    else:
+                        # Draw dots on empty valid squares
+                        s = p.Surface((SQ_SIZE, SQ_SIZE), p.SRCALPHA)
+                        p.draw.circle(s, (50, 50, 50, 120),
+                                      (SQ_SIZE // 2, SQ_SIZE // 2),
+                                      SQ_SIZE // 8)
+                        screen.blit(s, (targetCol*SQ_SIZE, targetRow*SQ_SIZE))
+
 
 if __name__ == "__main__":
     main()
