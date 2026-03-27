@@ -38,10 +38,49 @@ class GameState():
         self.whiteToMove = True
         self.moveLog = []
 
+        # ADDED: Keep track of king locations
+        self.whiteKingLocation = (7, 4)
+        self.blackKingLocation = (0, 4)
+
+        # ADDED FOR CASTLING: Current castling rights + log for undo
+        self.currentCastlingRights = CastleRights(True, True, True, True)
+        self.castlingRightsLog = [CastleRights(True, True, True, True)]
+
     def makeMove(self, move):
         self.board[move.startRow][move.startCol] = "--"
         self.board[move.endRow][move.endCol] = move.pieceMoved
         self.moveLog.append(move) # Log move
+
+        # ADDED: Update king location after a king move
+        if move.pieceMoved == "wK":
+            self.whiteKingLocation = (move.endRow, move.endCol)
+        elif move.pieceMoved == "bK":
+            self.blackKingLocation = (move.endRow, move.endCol)
+
+        # ADDED FOR PAWN PROMOTION: Auto promote pawn to queen
+        if move.isPawnPromotion:
+            self.board[move.endRow][move.endCol] = move.pieceMoved[0] + "Q"
+
+        # ADDED FOR CASTLING: Move the rook too when castling
+        if move.isCastleMove:
+            if move.endCol - move.startCol == 2:  # kingside castle
+                self.board[move.endRow][move.endCol - 1] = self.board[move.endRow][move.endCol + 1]
+                self.board[move.endRow][move.endCol + 1] = "--"
+            else:  # queenside castle
+                self.board[move.endRow][move.endCol + 1] = self.board[move.endRow][move.endCol - 2]
+                self.board[move.endRow][move.endCol - 2] = "--"
+
+        # ADDED FOR CASTLING: Update castling rights after every move
+        self.updateCastleRights(move)
+        self.castlingRightsLog.append(
+            CastleRights(
+                self.currentCastlingRights.wks,
+                self.currentCastlingRights.bks,
+                self.currentCastlingRights.wqs,
+                self.currentCastlingRights.bqs
+            )
+        )
+
         self.whiteToMove = not self.whiteToMove # Switch turns
 
     def undoMove(self):
@@ -51,9 +90,112 @@ class GameState():
             self.board[move.endRow][move.endCol] = move.pieceCaptured
             self.whiteToMove = not self.whiteToMove
 
+            # ADDED: Restore king location on undo
+            if move.pieceMoved == "wK":
+                self.whiteKingLocation = (move.startRow, move.startCol)
+            elif move.pieceMoved == "bK":
+                self.blackKingLocation = (move.startRow, move.startCol)
+
+            # ADDED FOR CASTLING: Undo rook movement from castle
+            if move.isCastleMove:
+                if move.endCol - move.startCol == 2:  # kingside castle
+                    self.board[move.endRow][move.endCol + 1] = self.board[move.endRow][move.endCol - 1]
+                    self.board[move.endRow][move.endCol - 1] = "--"
+                else:  # queenside castle
+                    self.board[move.endRow][move.endCol - 2] = self.board[move.endRow][move.endCol + 1]
+                    self.board[move.endRow][move.endCol + 1] = "--"
+
+            # ADDED FOR CASTLING: Restore previous castling rights
+            self.castlingRightsLog.pop()
+            lastRights = self.castlingRightsLog[-1]
+            self.currentCastlingRights = CastleRights(
+                lastRights.wks,
+                lastRights.bks,
+                lastRights.wqs,
+                lastRights.bqs
+            )
+
     # Check to see if king is in check
     def getValidMoves(self):
-        return self.getAllPossibleMoves()
+        # MODIFIED: Get all legal moves, not just all possible raw moves
+        tempCastleRights = CastleRights(
+            self.currentCastlingRights.wks,
+            self.currentCastlingRights.bks,
+            self.currentCastlingRights.wqs,
+            self.currentCastlingRights.bqs
+        )
+
+        moves = self.getAllPossibleMoves()
+
+        # ADDED FOR CASTLING: Add castling moves if legal
+        if self.whiteToMove:
+            self.getCastleMoves(self.whiteKingLocation[0], self.whiteKingLocation[1], moves)
+        else:
+            self.getCastleMoves(self.blackKingLocation[0], self.blackKingLocation[1], moves)
+
+        # ADDED: Remove moves that leave own king in check
+        for i in range(len(moves) - 1, -1, -1):
+            self.makeMove(moves[i])
+            self.whiteToMove = not self.whiteToMove
+            if self.inCheck():
+                moves.remove(moves[i])
+            self.whiteToMove = not self.whiteToMove
+            self.undoMove()
+
+        self.currentCastlingRights = tempCastleRights
+        return moves
+
+    # ADDED: Check if current player's king is in check
+    def inCheck(self):
+        if self.whiteToMove:
+            return self.squareUnderAttack(self.whiteKingLocation[0], self.whiteKingLocation[1])
+        else:
+            return self.squareUnderAttack(self.blackKingLocation[0], self.blackKingLocation[1])
+
+    # ADDED: Check if enemy can attack square (r, c)
+    def squareUnderAttack(self, r, c):
+        self.whiteToMove = not self.whiteToMove
+        oppMoves = self.getAllPossibleMoves()
+        self.whiteToMove = not self.whiteToMove
+        for move in oppMoves:
+            if move.endRow == r and move.endCol == c:
+                return True
+        return False
+
+    # ADDED FOR CASTLING: Update castle rights when king/rook moves or rook is captured
+    def updateCastleRights(self, move):
+        if move.pieceMoved == 'wK':
+            self.currentCastlingRights.wks = False
+            self.currentCastlingRights.wqs = False
+        elif move.pieceMoved == 'bK':
+            self.currentCastlingRights.bks = False
+            self.currentCastlingRights.bqs = False
+        elif move.pieceMoved == 'wR':
+            if move.startRow == 7:
+                if move.startCol == 0:
+                    self.currentCastlingRights.wqs = False
+                elif move.startCol == 7:
+                    self.currentCastlingRights.wks = False
+        elif move.pieceMoved == 'bR':
+            if move.startRow == 0:
+                if move.startCol == 0:
+                    self.currentCastlingRights.bqs = False
+                elif move.startCol == 7:
+                    self.currentCastlingRights.bks = False
+
+        # ADDED FOR CASTLING: If rook gets captured, remove that castle right too
+        if move.pieceCaptured == 'wR':
+            if move.endRow == 7:
+                if move.endCol == 0:
+                    self.currentCastlingRights.wqs = False
+                elif move.endCol == 7:
+                    self.currentCastlingRights.wks = False
+        elif move.pieceCaptured == 'bR':
+            if move.endRow == 0:
+                if move.endCol == 0:
+                    self.currentCastlingRights.bqs = False
+                elif move.endCol == 7:
+                    self.currentCastlingRights.bks = False
 
     # Check all possible moves according to the rules
     def getAllPossibleMoves(self):
@@ -92,6 +234,7 @@ class GameState():
                 if self.board[r+1][c+1][0] == 'w':
                     moves.append(Move((r,c), (r+1, c+1), self.board))
             # ADD PAWN PROMOTIONS LATER HERE
+            # MODIFIED: Pawn promotion is now handled in makeMove() using move.isPawnPromotion
 
     def getRookMoves(self, r, c, moves):
         directions = ((-1,0), (0,-1), (1,0), (0,1))
@@ -169,6 +312,40 @@ class GameState():
                 if endPiece[0] != allyColor:
                     moves.append(Move((r,c), (endRow,endCol), self.board))
 
+    # ADDED FOR CASTLING: Generate legal castle moves
+    def getCastleMoves(self, r, c, moves):
+        if self.squareUnderAttack(r, c):
+            return
+
+        if (self.whiteToMove and self.currentCastlingRights.wks) or (not self.whiteToMove and self.currentCastlingRights.bks):
+            self.getKingsideCastleMoves(r, c, moves)
+
+        if (self.whiteToMove and self.currentCastlingRights.wqs) or (not self.whiteToMove and self.currentCastlingRights.bqs):
+            self.getQueensideCastleMoves(r, c, moves)
+
+    # ADDED FOR CASTLING: Kingside castle
+    def getKingsideCastleMoves(self, r, c, moves):
+        if c + 2 < 8:
+            if self.board[r][c + 1] == "--" and self.board[r][c + 2] == "--":
+                if not self.squareUnderAttack(r, c + 1) and not self.squareUnderAttack(r, c + 2):
+                    moves.append(Move((r, c), (r, c + 2), self.board, isCastleMove=True))
+
+    # ADDED FOR CASTLING: Queenside castle
+    def getQueensideCastleMoves(self, r, c, moves):
+        if c - 3 >= 0:
+            if self.board[r][c - 1] == "--" and self.board[r][c - 2] == "--" and self.board[r][c - 3] == "--":
+                if not self.squareUnderAttack(r, c - 1) and not self.squareUnderAttack(r, c - 2):
+                    moves.append(Move((r, c), (r, c - 2), self.board, isCastleMove=True))
+
+
+# ADDED FOR CASTLING: Store castle rights
+class CastleRights:
+    def __init__(self, wks, bks, wqs, bqs):
+        self.wks = wks
+        self.bks = bks
+        self.wqs = wqs
+        self.bqs = bqs
+
 
 class Move():
     # Computer (Row, Col) --> (Rank, File)
@@ -177,13 +354,24 @@ class Move():
     filesToCols = {"a": 0, "b": 1, "c": 2, "d": 3, "e": 4, "f": 5, "g": 6, "h": 7}
     colsToFiles = {v: k for k, v in filesToCols.items()}
 
-    def __init__(self, startSq, endSq, board):
+    # MODIFIED: Added isCastleMove parameter
+    def __init__(self, startSq, endSq, board, isCastleMove=False):
         self.startRow = startSq[0]
         self.startCol = startSq[1]
         self.endRow = endSq[0]
         self.endCol = endSq[1]
         self.pieceMoved = board[self.startRow][self.startCol]
         self.pieceCaptured = board[self.endRow][self.endCol]
+
+        # ADDED FOR CASTLING
+        self.isCastleMove = isCastleMove
+
+        # ADDED FOR PAWN PROMOTION
+        self.isPawnPromotion = (
+            (self.pieceMoved == "wp" and self.endRow == 0) or
+            (self.pieceMoved == "bp" and self.endRow == 7)
+        )
+
         # Replicate hash function to get unique move ID for comparing moves
         self.moveID = self.startRow * 1000 + self.startCol * 100 + self.endRow * 10 + self.endCol
 
@@ -198,13 +386,3 @@ class Move():
 
     def getRankFile(self, r, c):
         return self.colsToFiles[c] + self.rowsToRanks[r]
-
-
-
-
-
-
-
-
-
-
