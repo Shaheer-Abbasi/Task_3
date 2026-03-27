@@ -2,8 +2,9 @@
 Handle GameState and User Input
 """
 
+import os
 import pygame as p
-from Chess import ChessEngine
+import ChessEngine
 
 WIDTH = HEIGHT = 512
 DIMENSION = 8 # Chess board is 8x8
@@ -24,7 +25,7 @@ def load_images():
         # Assign the key value pair
         # Use transform.scale function to ensure the image is properly rendered based on size
         # image.load grabs the image and displays it
-        IMAGES[piece] = p.transform.scale(p.image.load("images/" + piece + ".png"), (SQ_SIZE, SQ_SIZE))
+        IMAGES[piece] = p.transform.scale(p.image.load(os.path.join(os.path.dirname(__file__), "images", piece + ".png")), (SQ_SIZE, SQ_SIZE))
 
 def main():
     # Initialize the board state
@@ -59,11 +60,13 @@ def main():
                     playerClicks.append(sqSelected) # Append both first and second click
                 if len(playerClicks) == 2: # After second click - make move
                     move = ChessEngine.Move(playerClicks[0], playerClicks[1], gs.board)
-                    if move in validMoves:
-                        gs.makeMove(move)
-                        moveMade = True
-                        sqSelected = () # Reset user clicks
-                        playerClicks = []
+                    for validMove in validMoves:
+                        if move == validMove:
+                            gs.makeMove(validMove)
+                            moveMade = True
+                            sqSelected = () # Reset user clicks
+                            playerClicks = []
+                            break
                     else:
                         playerClicks = [sqSelected]
             # Key handler
@@ -77,8 +80,8 @@ def main():
             moveMade = False
 
         clock.tick(MAX_FPS)
-        p.display.flip()
         drawGameState(screen, gs, validMoves, sqSelected)
+        p.display.flip()
 
 """
 Function for graphics
