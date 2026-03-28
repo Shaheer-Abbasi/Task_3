@@ -50,6 +50,14 @@ class GameState():
         self.enpassantPossible = ()
         self.enpassantPossibleLog = [()]
 
+        # Track board positions for Threefold repetition and set current Fen
+        self.positions = {}
+        fen = self.getFEN()
+        self.positions[fen] = self.positions.get(fen, 0) + 1
+
+        # Pending promotion: set to (row, col, color) when player must choose
+        self.pendingPromotion = None
+
     def makeMove(self, move):
         self.board[move.startRow][move.startCol] = "--"
         self.board[move.endRow][move.endCol] = move.pieceMoved
@@ -61,10 +69,12 @@ class GameState():
         elif move.pieceMoved == "bK":
             self.blackKingLocation = (move.endRow, move.endCol)
 
-        # Auto promote pawn to queen
+        # Pawn promotion: pause and wait for player choice instead of auto-promoting
         if move.isPawnPromotion:
-            self.board[move.endRow][move.endCol] = move.pieceMoved[0] + "Q"
-
+            color = move.pieceMoved[0]
+            self.pendingPromotion = (move.endRow, move.endCol, color)
+            # Leave the pawn on the board for now; completePromotion() will swap it
+        
         # Move the rook too when castling
         if move.isCastleMove:
             if move.endCol - move.startCol == 2:  # kingside castle
@@ -96,11 +106,41 @@ class GameState():
             )
         )
 
-        self.whiteToMove = not self.whiteToMove # Switch turns
+        # Only switch turns if there's no pending promotion
+        if not self.pendingPromotion:
+            self.whiteToMove = not self.whiteToMove
+            fen = self.getFEN()
+            self.positions[fen] = self.positions.get(fen, 0) + 1
+
+    def completePromotion(self, pieceChoice):
+        """
+        Called after the player selects a promotion piece.
+        pieceChoice: one of 'Q', 'R', 'B', 'N'
+        """
+        if self.pendingPromotion is None:
+            return
+        row, col, color = self.pendingPromotion
+        self.board[row][col] = color + pieceChoice
+        self.pendingPromotion = None
+
+        # Now switch turns and record position
+        self.whiteToMove = not self.whiteToMove
+        fen = self.getFEN()
+        self.positions[fen] = self.positions.get(fen, 0) + 1
 
     def undoMove(self):
         if len(self.moveLog) != 0:
+            # If we're mid-promotion, cancel it first without popping the move
+            if self.pendingPromotion is not None:
+                move = self.moveLog[-1]
+                row, col, color = self.pendingPromotion
+                self.board[row][col] = color + 'p'  # restore the pawn
+                self.pendingPromotion = None
+                # Don't pop the move yet — fall through to full undo below
+
             move = self.moveLog.pop()
+            fen = self.getFEN()
+            self.positions[fen] = self.positions.get(fen, 0) - 1
             self.board[move.startRow][move.startCol] = move.pieceMoved
             self.board[move.endRow][move.endCol] = move.pieceCaptured
             self.whiteToMove = not self.whiteToMove
@@ -160,6 +200,9 @@ class GameState():
         # Remove moves that leave own king in check
         for i in range(len(moves) - 1, -1, -1):
             self.makeMove(moves[i])
+            # If promotion was triggered during validation, auto-complete with queen temporarily
+            if self.pendingPromotion is not None:
+                self.completePromotion('Q')
             self.whiteToMove = not self.whiteToMove
             if self.inCheck():
                 moves.pop(i)
@@ -367,6 +410,60 @@ class GameState():
                 if not self.squareUnderAttack(r, c - 1) and not self.squareUnderAttack(r, c - 2):
                     moves.append(Move((r, c), (r, c - 2), self.board, isCastleMove=True))
 
+    def getFEN(self):
+        fen = ""
+
+        # board
+        for r in range(8):
+            empty = 0
+            for c in range(8):
+                piece = self.board[r][c]
+                if piece == "--":
+                    empty += 1
+                else:
+                    if empty > 0:
+                        fen += str(empty)
+                        empty = 0
+
+                    color = piece[0]
+                    p = piece[1]
+
+                    # convert to FEN format
+                    if color == 'w':
+                        fen += p.upper()
+                    else:
+                        fen += p.lower()
+
+            if empty > 0:
+                fen += str(empty)
+
+            if r != 7:
+                fen += "/"
+
+        # side to move
+        fen += " w" if self.whiteToMove else " b"
+
+        # castling
+        cr = self.currentCastlingRights
+        castling = ""
+        if cr.wks: castling += "K"
+        if cr.wqs: castling += "Q"
+        if cr.bks: castling += "k"
+        if cr.bqs: castling += "q"
+        if castling == "":
+            castling = "-"
+        fen += " " + castling
+
+        # en passant
+        if self.enpassantPossible != ():
+            r, c = self.enpassantPossible
+            file = chr(ord('a') + c)
+            rank = str(8 - r)
+            fen += f" {file}{rank}"
+        else:
+            fen += " -"
+
+        return fen
 
 # Store castle rights
 class CastleRights:
