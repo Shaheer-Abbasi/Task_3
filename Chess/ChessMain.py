@@ -129,7 +129,7 @@ def highlightSquares(screen, gs, validMoves, sqSelected):
             for move in validMoves:
                 if move.startRow == r and move.startCol == c:
                     targetRow, targetCol = move.endRow, move.endCol
-                    isCapture = gs.board[targetRow][targetCol] != "--"
+                    isCapture = gs.board[targetRow][targetCol] != "--" or move.isEnpassantMove
 
                     if isCapture:
                         # Draw ring around the capturable piece
