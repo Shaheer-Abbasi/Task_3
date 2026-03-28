@@ -73,18 +73,20 @@ def main():
                     playerClicks.append(sqSelected)
                 if len(playerClicks) == 2:
                     move = ChessEngine.Move(playerClicks[0], playerClicks[1], gs.board)
-                    if move.pieceCaptured == "--" or move.pieceMoved != 'wp' or move.pieceMoved != 'bp':
-                        FiftyMoveRuleCounter += 1
-                    else:
-                        FiftyMoveRuleCounter = 0
-                    if move in validMoves:
-                        gs.makeMove(move)
-                        # Only flag moveMade if no promotion is pending (promotion completes the move)
-                        if gs.pendingPromotion is None:
-                            moveMade = True
-                        sqSelected = ()
-                        playerClicks = []
-                        break
+                    for validMove in validMoves:
+                        if move == validMove:
+                            # 50-move rule: reset on capture or pawn move, increment otherwise
+                            if validMove.pieceCaptured != "--" or validMove.pieceMoved[1] == 'p':
+                                FiftyMoveRuleCounter = 0
+                            else:
+                                FiftyMoveRuleCounter += 1
+                            gs.makeMove(validMove)
+                            # Only flag moveMade if no promotion is pending
+                            if gs.pendingPromotion is None:
+                                moveMade = True
+                            sqSelected = ()
+                            playerClicks = []
+                            break
                     else:
                         playerClicks = [sqSelected]
 
@@ -228,7 +230,7 @@ def drawEndScreen(screen, win, reason):
         result_text = "Draw"
         result_color = p.Color("lightgray")
 
-    panel_w, panel_h = 320, 140
+    panel_w, panel_h = 320, 170
     panel_x = (WIDTH - panel_w) // 2
     panel_y = (HEIGHT - panel_h) // 2
 
@@ -242,8 +244,13 @@ def drawEndScreen(screen, win, reason):
 
     font_small = p.font.SysFont("Arial", 24)
     reason_surf = font_small.render(reason, True, p.Color(180, 180, 180))
-    reason_rect = reason_surf.get_rect(center=(WIDTH // 2, panel_y + 100))
+    reason_rect = reason_surf.get_rect(center=(WIDTH // 2, panel_y + 95))
     screen.blit(reason_surf, reason_rect)
+
+    font_hint = p.font.SysFont("Arial", 16)
+    hint_surf = font_hint.render("Press R to reset board", True, p.Color(130, 130, 130))
+    hint_rect = hint_surf.get_rect(center=(WIDTH // 2, panel_y + 140))
+    screen.blit(hint_surf, hint_rect)
 
 
 """

@@ -130,17 +130,22 @@ class GameState():
 
     def undoMove(self):
         if len(self.moveLog) != 0:
-            # If we're mid-promotion, cancel it first without popping the move
-            if self.pendingPromotion is not None:
+            # Cancel if mid-promotion
+            wasPendingPromotion = self.pendingPromotion is not None
+            if wasPendingPromotion:
                 move = self.moveLog[-1]
                 row, col, color = self.pendingPromotion
                 self.board[row][col] = color + 'p'  # restore the pawn
                 self.pendingPromotion = None
-                # Don't pop the move yet — fall through to full undo below
+                # Don't pop the move yet until full undo
 
             move = self.moveLog.pop()
-            fen = self.getFEN()
-            self.positions[fen] = self.positions.get(fen, 0) - 1
+
+            # Pend promotion check
+            if not wasPendingPromotion:
+                fen = self.getFEN()
+                self.positions[fen] = self.positions.get(fen, 0) - 1
+
             self.board[move.startRow][move.startCol] = move.pieceMoved
             self.board[move.endRow][move.endCol] = move.pieceCaptured
             self.whiteToMove = not self.whiteToMove
