@@ -1,0 +1,1326 @@
+{
+  "metadata": {
+    "algorithm": "NegamaxAB",
+    "depth": 1,
+    "move_ordering": "random",
+    "total_moves": 164,
+    "total_nodes": 2527,
+    "total_time": 1.637,
+    "outcome": "draw",
+    "timestamp": "20260329_030418"
+  },
+  "moves": [
+    {
+      "move_number": 1,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 2,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 3,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.016,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 4,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 5,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 29,
+      "time": 0.024,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 6,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.024,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 7,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 31,
+      "time": 0.025,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 8,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 9,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 24,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 10,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.023,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 11,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 3,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 12,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.027,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 13,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 23,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 14,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.022,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 15,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.018,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 16,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 17,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.02,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 18,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 19,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 20,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 24,
+      "time": 0.02,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 21,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.022,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 22,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.024,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 23,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 25,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 24,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.024,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 25,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.025,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 26,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 27,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.024,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 28,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.03,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 29,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 33,
+      "time": 0.034,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 30,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 23,
+      "time": 0.024,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 31,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 35,
+      "time": 0.033,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 32,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.017,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 33,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 19,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 34,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.017,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 35,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 36,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.018,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 37,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 38,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.017,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 39,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 19,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 40,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 41,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.017,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 42,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 29,
+      "time": 0.018,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 43,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 18,
+      "time": 0.016,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 44,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 24,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 45,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 46,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 47,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 17,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 48,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 49,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 50,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.016,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 51,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 15,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 52,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 16,
+      "time": 0.01,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 53,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 54,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 18,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 55,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.016,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 56,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.006,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 57,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 25,
+      "time": 0.018,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 58,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 16,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 59,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 17,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 60,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 18,
+      "time": 0.016,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 61,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 19,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 62,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 16,
+      "time": 0.011,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 63,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 64,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 14,
+      "time": 0.009,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 65,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.011,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 66,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 13,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 67,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 68,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 12,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 69,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 70,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 13,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 71,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.018,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 72,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 15,
+      "time": 0.011,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 73,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 74,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.01,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 75,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 25,
+      "time": 0.008,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 76,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.011,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 77,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 78,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 79,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.017,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 80,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 81,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 33,
+      "time": 0.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 82,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 83,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 30,
+      "time": 0.008,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 84,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 3,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 85,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 29,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 86,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 87,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.01,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 88,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.006,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 89,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 30,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 90,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 91,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.007,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 92,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 93,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 22,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 94,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 95,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 96,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 97,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 98,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 99,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 100,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 101,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 102,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 103,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 104,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 105,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 106,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 8,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 107,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 108,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 109,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 110,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 111,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 112,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 113,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 114,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 8,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 115,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 116,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 117,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 118,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 119,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 120,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 121,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 122,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 123,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 124,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 125,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 126,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 127,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 128,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 129,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 130,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 131,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 132,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 133,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 134,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 135,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 136,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 137,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 138,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 139,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 140,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 141,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 142,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 143,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 144,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 145,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 146,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 147,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 148,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 149,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 150,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 151,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 152,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 153,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 154,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 155,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 156,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 157,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 158,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 159,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 160,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 161,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 162,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 163,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 164,
+      "algorithm": "NegamaxAB",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    }
+  ]
+}

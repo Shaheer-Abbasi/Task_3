@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "algorithm": "NegamaxAB",
+    "depth": 3,
+    "move_ordering": "random",
+    "total_moves": 29,
+    "total_nodes": 118692,
+    "total_time": 160.017,
+    "outcome": "black_wins",
+    "timestamp": "20260329_005927"
+  },
+  "moves": [
+    {
+      "move_number": 1,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 611,
+      "time": 0.618,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 2,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1012,
+      "time": 0.912,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 3,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1663,
+      "time": 1.598,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 4,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1944,
+      "time": 1.981,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 5,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1649,
+      "time": 1.754,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 6,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1379,
+      "time": 1.189,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 7,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1267,
+      "time": 1.106,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 8,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 2866,
+      "time": 3.036,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 9,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3388,
+      "time": 4.008,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 10,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4719,
+      "time": 6.087,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 11,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4709,
+      "time": 6.156,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 12,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 5386,
+      "time": 6.762,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 13,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 6478,
+      "time": 9.064,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 14,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 5045,
+      "time": 7.329,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 15,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3081,
+      "time": 4.731,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 16,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 9914,
+      "time": 16.007,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 17,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 10477,
+      "time": 13.975,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 18,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3493,
+      "time": 4.719,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 19,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4941,
+      "time": 6.857,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 20,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 5054,
+      "time": 6.413,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 21,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1210,
+      "time": 1.505,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 22,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3022,
+      "time": 3.849,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 23,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4902,
+      "time": 6.73,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 24,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 7260,
+      "time": 11.443,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 25,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 6238,
+      "time": 9.933,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 26,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 7230,
+      "time": 10.251,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 27,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3274,
+      "time": 4.187,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 28,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 2341,
+      "time": 2.936,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 29,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4139,
+      "time": 4.881,
+      "move_ordering": "random"
+    }
+  ]
+}
