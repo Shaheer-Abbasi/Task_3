@@ -295,6 +295,8 @@ class GameState():
 
     def getPawnMoves(self, r, c, moves):
         if self.whiteToMove: # White pawn moves
+            if r - 1 < 0:
+                return
             if self.board[r-1][c] == "--": # 1 square pawn advance
                 moves.append(Move((r,c),(r-1,c), self.board))
                 if r == 6 and self.board[r-2][c] == "--": # 2 square pawn advance
@@ -311,6 +313,8 @@ class GameState():
                     moves.append(Move((r, c), (r-1, c+1), self.board, isEnpassantMove=True))
 
         else:
+            if r + 1 > 7:
+                return
             if self.board[r+1][c] == "--":
                 moves.append(Move((r,c),(r+1,c), self.board))
                 if r == 1 and self.board[r+2][c] == "--":
