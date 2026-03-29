@@ -5,6 +5,7 @@ Handle GameState and User Input
 import os
 import pygame as p
 import ChessEngine
+import SmartMoveFinder
 from collections import Counter
 
 WIDTH = HEIGHT = 512
@@ -35,6 +36,10 @@ def main():
     validMoves = gs.getValidMoves()
     moveMade = False
 
+    # Player config: True = human, False = AI
+    playerOne = True   # White
+    playerTwo = False  # Black
+
     # -1: no win  0: draw  1: white win  2: black win
     win = -1
     reason = ""
@@ -45,6 +50,8 @@ def main():
     FiftyMoveRuleCounter = 0
 
     while running:
+        humanTurn = (gs.whiteToMove and playerOne) or (not gs.whiteToMove and playerTwo)
+
         for e in p.event.get():
             if e.type == p.QUIT:
                 running = False
@@ -61,6 +68,9 @@ def main():
 
                 if win != -1:
                     continue  # Block clicks after game over
+
+                if not humanTurn:
+                    continue  # Block clicks during AI turn
 
                 location = p.mouse.get_pos()
                 col = location[0] // SQ_SIZE
@@ -110,6 +120,20 @@ def main():
                     FiftyMoveRuleCounter = 0
                     win = -1
                     reason = ""
+
+        # AI move
+        if not humanTurn and win == -1 and gs.pendingPromotion is None:
+            aiMove = SmartMoveFinder.findBestMoveAlphaBeta(gs, validMoves)
+            if aiMove is None:
+                aiMove = validMoves[0] if validMoves else None
+            if aiMove is not None:
+                # 50-move rule tracking for AI
+                if aiMove.pieceCaptured != "--" or aiMove.pieceMoved[1] == 'p':
+                    FiftyMoveRuleCounter = 0
+                else:
+                    FiftyMoveRuleCounter += 1
+                gs.makeMove(aiMove)
+                moveMade = True
 
         if moveMade:
             validMoves = gs.getValidMoves()

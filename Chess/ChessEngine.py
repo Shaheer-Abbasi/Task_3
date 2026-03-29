@@ -58,6 +58,9 @@ class GameState():
         # Pending promotion: set to (row, col, color) when player must choose
         self.pendingPromotion = None
 
+        self.checkmate = False
+        self.stalemate = False
+
     def makeMove(self, move):
         self.board[move.startRow][move.startCol] = "--"
         self.board[move.endRow][move.endCol] = move.pieceMoved
@@ -213,6 +216,15 @@ class GameState():
                 moves.pop(i)
             self.whiteToMove = not self.whiteToMove
             self.undoMove()
+
+        if len(moves) == 0:
+            if self.inCheck():
+                self.checkmate = True
+            else:
+                self.stalemate = True
+        else:
+            self.checkmate = False
+            self.stalemate = False
 
         self.currentCastlingRights = tempCastleRights
         return moves
