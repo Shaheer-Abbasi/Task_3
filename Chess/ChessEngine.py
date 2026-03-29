@@ -58,6 +58,9 @@ class GameState():
         # Pending promotion: set to (row, col, color) when player must choose
         self.pendingPromotion = None
 
+        self.checkmate = False
+        self.stalemate = False
+
     def makeMove(self, move):
         self.board[move.startRow][move.startCol] = "--"
         self.board[move.endRow][move.endCol] = move.pieceMoved
@@ -214,6 +217,15 @@ class GameState():
             self.whiteToMove = not self.whiteToMove
             self.undoMove()
 
+        if len(moves) == 0:
+            if self.inCheck():
+                self.checkmate = True
+            else:
+                self.stalemate = True
+        else:
+            self.checkmate = False
+            self.stalemate = False
+
         self.currentCastlingRights = tempCastleRights
         return moves
 
@@ -283,6 +295,8 @@ class GameState():
 
     def getPawnMoves(self, r, c, moves):
         if self.whiteToMove: # White pawn moves
+            if r - 1 < 0:
+                return
             if self.board[r-1][c] == "--": # 1 square pawn advance
                 moves.append(Move((r,c),(r-1,c), self.board))
                 if r == 6 and self.board[r-2][c] == "--": # 2 square pawn advance
@@ -299,6 +313,8 @@ class GameState():
                     moves.append(Move((r, c), (r-1, c+1), self.board, isEnpassantMove=True))
 
         else:
+            if r + 1 > 7:
+                return
             if self.board[r+1][c] == "--":
                 moves.append(Move((r,c),(r+1,c), self.board))
                 if r == 1 and self.board[r+2][c] == "--":

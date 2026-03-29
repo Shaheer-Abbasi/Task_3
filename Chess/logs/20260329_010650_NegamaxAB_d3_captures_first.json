@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "algorithm": "NegamaxAB",
+    "depth": 3,
+    "move_ordering": "captures_first",
+    "total_moves": 21,
+    "total_nodes": 27981,
+    "total_time": 26.613,
+    "outcome": "draw",
+    "timestamp": "20260329_010650"
+  },
+  "moves": [
+    {
+      "move_number": 1,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 586,
+      "time": 0.438,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 2,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 544,
+      "time": 0.41,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 3,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1352,
+      "time": 1.112,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 4,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 648,
+      "time": 0.51,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 5,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1505,
+      "time": 1.266,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 6,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 597,
+      "time": 0.502,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 7,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1514,
+      "time": 1.459,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 8,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1032,
+      "time": 0.964,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 9,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1824,
+      "time": 1.781,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 10,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1281,
+      "time": 1.459,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 11,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1582,
+      "time": 1.539,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 12,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 748,
+      "time": 0.706,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 13,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1238,
+      "time": 1.168,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 14,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 771,
+      "time": 0.744,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 15,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1259,
+      "time": 1.183,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 16,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1192,
+      "time": 1.264,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 17,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3543,
+      "time": 3.449,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 18,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 771,
+      "time": 0.746,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 19,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1259,
+      "time": 1.177,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 20,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1192,
+      "time": 1.269,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 21,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3543,
+      "time": 3.467,
+      "move_ordering": "captures_first"
+    }
+  ]
+}
