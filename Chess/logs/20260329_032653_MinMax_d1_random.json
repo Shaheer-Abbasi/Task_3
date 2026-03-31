@@ -1,0 +1,814 @@
+{
+  "metadata": {
+    "algorithm": "MinMax",
+    "depth": 1,
+    "move_ordering": "random",
+    "total_moves": 100,
+    "total_nodes": 1375,
+    "total_time": 1.203,
+    "outcome": "draw",
+    "timestamp": "20260329_032653"
+  },
+  "moves": [
+    {
+      "move_number": 1,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.028,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 2,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 23,
+      "time": 0.031,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 3,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 23,
+      "time": 0.03,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 4,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.029,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 5,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.047,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 6,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 25,
+      "time": 0.039,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 7,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 21,
+      "time": 0.036,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 8,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 2,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 9,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 2,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 10,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 24,
+      "time": 0.031,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 11,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 25,
+      "time": 0.036,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 12,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 29,
+      "time": 0.04,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 13,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.044,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 14,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 15,
+      "time": 0.025,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 15,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 18,
+      "time": 0.03,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 16,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 18,
+      "time": 0.023,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 17,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 19,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 18,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 19,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 18,
+      "time": 0.027,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 20,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 7,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 21,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 14,
+      "time": 0.02,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 22,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 13,
+      "time": 0.01,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 23,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 13,
+      "time": 0.018,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 24,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 13,
+      "time": 0.01,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 25,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.017,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 26,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 27,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 10,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 28,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 3,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 29,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 30,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.007,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 31,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 13,
+      "time": 0.007,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 32,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 18,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 33,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 16,
+      "time": 0.016,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 34,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 11,
+      "time": 0.011,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 35,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 17,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 36,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 37,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 7,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 38,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 39,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 40,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 3,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 41,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 42,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 43,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 8,
+      "time": 0.006,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 44,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 7,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 45,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 46,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 7,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 47,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.008,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 48,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 49,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.005,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 50,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 3,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 51,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.006,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 52,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 3,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 53,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 4,
+      "time": 0.007,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 54,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.011,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 55,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.008,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 56,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 5,
+      "time": 0.008,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 57,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.012,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 58,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 20,
+      "time": 0.026,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 59,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 31,
+      "time": 0.027,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 60,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.028,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 61,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 23,
+      "time": 0.032,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 62,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 32,
+      "time": 0.039,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 63,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 29,
+      "time": 0.021,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 64,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 28,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 65,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 30,
+      "time": 0.007,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 66,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.008,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 67,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 68,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 69,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 29,
+      "time": 0.007,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 70,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 26,
+      "time": 0.006,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 71,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.014,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 72,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.006,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 73,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 27,
+      "time": 0.015,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 74,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 31,
+      "time": 0.016,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 75,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 30,
+      "time": 0.013,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 76,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 77,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 78,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 79,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 80,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 81,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 82,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 83,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 84,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 85,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 86,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 87,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 88,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.004,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 89,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 90,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 91,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 6,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 92,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 93,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 94,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 8,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 95,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 96,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 97,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.001,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 98,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 99,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.002,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 100,
+      "algorithm": "MinMax",
+      "depth": 1,
+      "nodes": 9,
+      "time": 0.003,
+      "move_ordering": "random"
+    }
+  ]
+}
