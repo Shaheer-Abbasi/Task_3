@@ -1,0 +1,758 @@
+{
+  "metadata": {
+    "algorithm": "Negamax",
+    "depth": 3,
+    "move_ordering": "captures_first",
+    "total_moves": 93,
+    "total_nodes": 1285751,
+    "total_time": 1286.382,
+    "outcome": "draw",
+    "timestamp": "20260331_031917"
+  },
+  "moves": [
+    {
+      "move_number": 1,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 9323,
+      "time": 5.758,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 2,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 687,
+      "time": 0.531,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 3,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 17808,
+      "time": 12.718,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 4,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 796,
+      "time": 0.708,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 5,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 24401,
+      "time": 18.9,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 6,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1206,
+      "time": 1.156,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 7,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 31784,
+      "time": 31.529,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 8,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 2070,
+      "time": 2.25,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 9,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 3073,
+      "time": 3.332,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 10,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3761,
+      "time": 4.389,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 11,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 39304,
+      "time": 41.443,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 12,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1815,
+      "time": 1.818,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 13,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 32340,
+      "time": 33.421,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 14,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4007,
+      "time": 4.818,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 15,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 49899,
+      "time": 56.735,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 16,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4473,
+      "time": 5.371,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 17,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 46261,
+      "time": 51.515,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 18,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4354,
+      "time": 5.344,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 19,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 50755,
+      "time": 61.021,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 20,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3753,
+      "time": 4.312,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 21,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 40072,
+      "time": 45.469,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 22,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3428,
+      "time": 3.898,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 23,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 34414,
+      "time": 38.297,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 24,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 5742,
+      "time": 5.784,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 25,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 27026,
+      "time": 27.718,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 26,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4593,
+      "time": 5.104,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 27,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 33644,
+      "time": 36.753,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 28,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 4422,
+      "time": 5.296,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 29,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 41730,
+      "time": 44.799,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 30,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 7694,
+      "time": 8.984,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 31,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 40112,
+      "time": 43.636,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 32,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 9762,
+      "time": 10.516,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 33,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 36849,
+      "time": 41.588,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 34,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 8186,
+      "time": 9.186,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 35,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 37021,
+      "time": 40.048,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 36,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 9581,
+      "time": 11.21,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 37,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 31425,
+      "time": 33.453,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 38,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 10725,
+      "time": 13.302,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 39,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 53365,
+      "time": 66.224,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 40,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 2372,
+      "time": 3.04,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 41,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 45063,
+      "time": 53.85,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 42,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1270,
+      "time": 1.586,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 43,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 4246,
+      "time": 5.791,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 44,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1956,
+      "time": 2.193,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 45,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 23470,
+      "time": 28.732,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 46,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 2456,
+      "time": 2.766,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 47,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 36428,
+      "time": 39.019,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 48,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 2368,
+      "time": 2.644,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 49,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 35520,
+      "time": 36.982,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 50,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1995,
+      "time": 2.224,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 51,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 33783,
+      "time": 33.526,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 52,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3693,
+      "time": 4.444,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 53,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 37615,
+      "time": 37.842,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 54,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 7428,
+      "time": 8.922,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 55,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 48515,
+      "time": 47.709,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 56,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 3831,
+      "time": 4.658,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 57,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 45485,
+      "time": 42.175,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 58,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 1952,
+      "time": 2.586,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 59,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 42862,
+      "time": 37.68,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 60,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 67,
+      "time": 0.136,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 61,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 3330,
+      "time": 3.224,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 62,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 376,
+      "time": 0.277,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 63,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 12588,
+      "time": 6.403,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 64,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 308,
+      "time": 0.21,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 65,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 6276,
+      "time": 2.211,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 66,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 242,
+      "time": 0.139,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 67,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 5801,
+      "time": 1.985,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 68,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 203,
+      "time": 0.144,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 69,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 15428,
+      "time": 6.856,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 70,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 221,
+      "time": 0.197,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 71,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 7844,
+      "time": 2.671,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 72,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 211,
+      "time": 0.133,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 73,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 13051,
+      "time": 5.454,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 74,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 155,
+      "time": 0.097,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 75,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 3541,
+      "time": 0.731,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 76,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 101,
+      "time": 0.058,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 77,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 8353,
+      "time": 2.346,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 78,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 187,
+      "time": 0.122,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 79,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 9439,
+      "time": 3.077,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 80,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 179,
+      "time": 0.127,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 81,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 10006,
+      "time": 3.514,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 82,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 125,
+      "time": 0.109,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 83,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 6592,
+      "time": 1.968,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 84,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 111,
+      "time": 0.063,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 85,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 9097,
+      "time": 2.447,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 86,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 154,
+      "time": 0.09,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 87,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 6875,
+      "time": 1.745,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 88,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 49,
+      "time": 0.03,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 89,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 4144,
+      "time": 1.173,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 90,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 41,
+      "time": 0.024,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 91,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 4947,
+      "time": 1.488,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 92,
+      "algorithm": "NegamaxAB",
+      "depth": 3,
+      "nodes": 31,
+      "time": 0.024,
+      "move_ordering": "captures_first"
+    },
+    {
+      "move_number": 93,
+      "algorithm": "Negamax",
+      "depth": 3,
+      "nodes": 1709,
+      "time": 0.406,
+      "move_ordering": "captures_first"
+    }
+  ]
+}
