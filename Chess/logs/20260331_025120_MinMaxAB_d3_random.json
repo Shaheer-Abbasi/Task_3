@@ -1,0 +1,566 @@
+{
+  "metadata": {
+    "algorithm": "MinMaxAB",
+    "depth": 3,
+    "move_ordering": "random",
+    "total_moves": 69,
+    "total_nodes": 294896,
+    "total_time": 360.581,
+    "outcome": "white_wins",
+    "timestamp": "20260331_025120"
+  },
+  "moves": [
+    {
+      "move_number": 1,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 586,
+      "time": 0.331,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 2,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 548,
+      "time": 0.351,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 3,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 728,
+      "time": 0.458,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 4,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 1527,
+      "time": 1.354,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 5,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 1945,
+      "time": 1.785,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 6,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 1866,
+      "time": 1.752,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 7,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2676,
+      "time": 2.726,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 8,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2820,
+      "time": 2.82,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 9,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2551,
+      "time": 2.649,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 10,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3030,
+      "time": 3.478,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 11,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3545,
+      "time": 3.778,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 12,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 9867,
+      "time": 12.161,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 13,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4526,
+      "time": 4.262,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 14,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2148,
+      "time": 2.387,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 15,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5331,
+      "time": 5.811,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 16,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3737,
+      "time": 4.421,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 17,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5913,
+      "time": 5.955,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 18,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2588,
+      "time": 2.981,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 19,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2697,
+      "time": 3.213,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 20,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3321,
+      "time": 3.845,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 21,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2333,
+      "time": 2.734,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 22,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3010,
+      "time": 2.933,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 23,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2280,
+      "time": 2.601,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 24,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3105,
+      "time": 2.877,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 25,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3115,
+      "time": 3.59,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 26,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 6049,
+      "time": 6.109,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 27,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3355,
+      "time": 4.413,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 28,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5678,
+      "time": 6.041,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 29,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4144,
+      "time": 5.24,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 30,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5493,
+      "time": 6.4,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 31,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5753,
+      "time": 7.929,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 32,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 8176,
+      "time": 10.778,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 33,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 7283,
+      "time": 9.889,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 34,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 12487,
+      "time": 16.208,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 35,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2434,
+      "time": 3.299,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 36,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 9776,
+      "time": 12.621,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 37,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5068,
+      "time": 6.691,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 38,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 11100,
+      "time": 14.315,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 39,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 7615,
+      "time": 10.54,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 40,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 9510,
+      "time": 12.55,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 41,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 8363,
+      "time": 11.358,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 42,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 21928,
+      "time": 32.334,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 43,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3619,
+      "time": 4.432,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 44,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4126,
+      "time": 5.985,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 45,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3023,
+      "time": 4.085,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 46,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4209,
+      "time": 5.695,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 47,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4196,
+      "time": 5.27,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 48,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4026,
+      "time": 5.857,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 49,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3585,
+      "time": 4.325,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 50,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 149,
+      "time": 0.175,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 51,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3860,
+      "time": 3.403,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 52,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 1039,
+      "time": 1.318,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 53,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4618,
+      "time": 4.284,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 54,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 1355,
+      "time": 2.009,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 55,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5585,
+      "time": 6.913,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 56,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2103,
+      "time": 3.019,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 57,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 5315,
+      "time": 6.307,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 58,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2348,
+      "time": 3.39,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 59,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 4859,
+      "time": 5.702,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 60,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2159,
+      "time": 3.011,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 61,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 8367,
+      "time": 9.268,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 62,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2118,
+      "time": 2.892,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 63,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 6002,
+      "time": 6.946,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 64,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 2429,
+      "time": 3.372,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 65,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 3734,
+      "time": 3.205,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 66,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 69,
+      "time": 0.092,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 67,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 209,
+      "time": 0.169,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 68,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 48,
+      "time": 0.056,
+      "move_ordering": "random"
+    },
+    {
+      "move_number": 69,
+      "algorithm": "MinMaxAB",
+      "depth": 3,
+      "nodes": 1741,
+      "time": 1.433,
+      "move_ordering": "random"
+    }
+  ]
+}
